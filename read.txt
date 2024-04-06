@@ -1,0 +1,14 @@
+why we are using folder name in paranthises like - (root) (auth) 
+ - Route Groups: 
+
+ npm install @clerk/nextjs
+ - create .env.local and paste the key mentioned in the doc. 
+ - wrapp the layout and its body within <ClerkProvider>.
+ - add middleware.
+ - create header for a clerk component.
+
+ - sign in to the dashboard. 
+ - Get the API Key. 
+ - paste the key in env.local. 
+ - enable the username from authentication tab to get the unquie names. 
+ 
