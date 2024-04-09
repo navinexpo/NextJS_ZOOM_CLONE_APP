@@ -1,14 +1,9 @@
 "use client";
 import { ReactNode } from "react";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTrigger,
-} from "./ui/dialog";
-// import Image from "next/image";
-// import { cn } from "@/lib/utils";
+import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog";
+import { cn } from "@/lib/utils";
+import { Button } from "./ui/button";
+import Image from "next/image";
 
 interface MeetingModalProps {
   isOpen: boolean;
@@ -38,15 +33,12 @@ const MeetingModal = ({
   buttonIcon,
 }: MeetingModalProps) => {
   return (
-    <Dialog>
+    <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogTrigger>Open</DialogTrigger>
-      <DialogContent>
-        <DialogHeader>
-          <DialogDescription>
-            This action cannot be undone. This will permanently delete your
-            account and remove your data from our servers.
-          </DialogDescription>
-        </DialogHeader>
+      <DialogContent className="flex w-full max-w-[520px] flex-col gap-6 border-none bg-dark-1 px-6 py-9 text-white">
+        <div className="flex flex-col gap-6">
+          Hello
+        </div>
       </DialogContent>
     </Dialog>
   );
