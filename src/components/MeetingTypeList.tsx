@@ -20,7 +20,8 @@ const MeetingTypeList = () => {
     if (
       val === "isInstantMeeting" ||
       val === "isJoiningMeeting" ||
-      val === "isScheduleMeeting"
+      val === "isScheduleMeeting" ||
+      val === "isRecordingMeeting"
     ) {
       setOpenModel(!modalOpen);
     }
@@ -68,7 +69,7 @@ const MeetingTypeList = () => {
         title="View Recordings"
         description="Meeting Recordings"
         className="bg-yellow-1"
-        name={"recordings"}
+        name={"isRecordingMeeting"}
         handleClick={handleClick}
       />
       <MeetingModal
